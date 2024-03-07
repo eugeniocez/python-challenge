@@ -29,14 +29,14 @@ with open(csvpath,newline='') as csvfile:
         #extract candidate name from the row
         candidate_name=row[2]
 
-        #if candidate is already in the dictionary, increment their vote count
+        #if candidate is already in the dictionary, increment vote count
         if candidate_name in candidates:
             candidates[candidate_name]=candidates[candidate_name]+1
 
         else:
             candidates[candidate_name]=1
 
-#calculate the percentage of votes each candidate won and find the winner
+#calculate the percentage of votes each candidate won and find winner
 max_votes=0
 with open('Analysis/election_results.txt','w') as txtfile:
     txtfile.write('Election Results\n')
