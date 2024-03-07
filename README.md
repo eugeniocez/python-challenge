@@ -25,3 +25,5 @@ For the second activity **"PyPoll"**, I first had a mistake with the candidates 
 `for candidate, votes in candidates.items():`
     `percentage=(votes/total_votes)*100`
    ` print(f'{candidate}: {percentage:.3f}% ({votes})')`
+
+I also made use of ChatGPT in order to make the code cleaner and more structurally organized, as I'm still getting used to learning how to do that.
